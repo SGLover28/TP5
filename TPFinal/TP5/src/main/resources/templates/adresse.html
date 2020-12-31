@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Demande d'adresse</title>
+    <link rel="stylesheet" type="text/css" href="ficheStyle.css" />
+</head>
+<body>
+
+
+
+<div th:insert="generalFragments.html::navbar"></div>
+<form action="meteo" method="post" >
+
+
+    <div class="form-floating">
+        <textarea name="auteur" class="form-control" placeholder="" id="floatingTextarea"></textarea>
+        <label for="floatingTextarea">Votre nom</label>
+    </div>
+
+
+    <div class="form-floating">
+        <textarea name="content" class="form-control" placeholder="" id="floatingTextarea2"></textarea>
+        <label for="floatingTextarea2">L'adresse que vous recherchez</label>
+    </div>
+    <input type="submit" >
+
+</form>
+</body>
+</html>
